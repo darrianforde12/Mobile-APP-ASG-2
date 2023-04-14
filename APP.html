@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Mobile Local Storage</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  <script src="js/script.js"></script>
+
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Local Storage Example</h1>
+    </div>
+
+    <form>
+      <input type="text" id="newTask" placeholder="Add a new task">
+      <input type="button" value="Submit" onClick="saveTask()"/>
+    </form>
+
+    <form>
+      <input type="button" value="Show" onclick="showTask()"/>
+    </form>
+    
+    <div data-role="main" class="ui-content">
+    <div data-role="content">
+        <p>Click the button to get your current location:</p>
+        <a href="#" id="getLocationButton" class="ui-btn ui-btn-b ui-corner-all">Get Location</a>
+    </div>
+  </div>
+
+</body>
+</html>
